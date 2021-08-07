@@ -1,0 +1,20 @@
+spring.mvc.view.prefix: /WEB-INF/view/
+spring.mvc.view.suffix: .jsp
+
+server.port=5000
+
+#logging.level=DEBUG
+
+# Database
+mydb.driver: com.mysql.jdbc.Driver
+mydb.url: jdbc:mysql://localhost:3306/springboot
+mydb.username: root
+mydb.password: root
+ 
+# Hibernate
+hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql: true
+hibernate.hbm2ddl.auto: update
+entitymanager.packagesToScan: com.crud.model
+
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
